@@ -81,7 +81,7 @@ I'm a software developer in training at **Sunrise UPC**, Switzerland — buildin
 
 **EC Dashboard** — Internal KPI dashboard built with Flask & Oracle DB, processing defect exports and visualising backlog health for engineering teams at Sunrise UPC.
 
-➡️ More on my [portfolio](https://duarte.sunrise-avengers.ch/projects)
+➡️ More on my [portfolio](https://duarte-santos.ch/projects)
 
 ---
 
