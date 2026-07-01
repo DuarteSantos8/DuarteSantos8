@@ -2,7 +2,7 @@
 
 I'm a software developer in training at **Sunrise UPC**, Switzerland — building web applications and digital solutions that create real value. Clean code and great user experiences aren't opposites to me, they're the same thing.
 
-🌐 **Portfolio:** [duarte.sunrise-avengers.ch](https://duarte.sunrise-avengers.ch)
+🌐 **Portfolio:** [duarte-santos.ch](https://duarte-santos.ch)
 
 ---
 
