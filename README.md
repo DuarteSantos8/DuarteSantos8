@@ -43,6 +43,6 @@ Software developer in training at **Sunrise UPC**, Switzerland — building web 
 
 ## 📍 About Me
 
-🇨🇭 Rorbas, Switzerland · 🎓 Applikationsentwickler EFZ + BM @ Sunrise UPC · 🏍️ Motorcycles & investing on the side
+🇨🇭 Rorbas, Switzerland · 🎓 Applikationsentwickler EFZ + BM @ Sunrise UPC
 
 *Always building. Always learning.*
