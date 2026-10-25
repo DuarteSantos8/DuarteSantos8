@@ -1,48 +1,45 @@
-# Hey, I'm Duarte 👋
+# Hi, I'm Duarte 👋
 
-Software developer in training at **Sunrise UPC**, Switzerland — building web applications and digital solutions that create real value. Clean code and great user experience aren't opposites to me, they're the same thing.
+Application developer apprentice at **Sunrise** in Switzerland, and the maintainer of **[openGym](https://github.com/DuarteSantos8/openGym)**, an open-source workout tracker with 15k+ stars that runs on your phone, your wrist and your own server.
 
-🌐 **Portfolio:** [duarte-santos.ch](https://duarte-santos.ch)
+I like shipping things people actually use, and I host almost everything I build myself.
 
----
-
-## 🛠️ Tech Stack
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vuedotjs&logoColor=4FC08D)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat&logo=springboot&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![Oracle DB](https://img.shields.io/badge/Oracle%20DB-F80000?style=flat&logo=oracle&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
-![Git](https://img.shields.io/badge/Git%20%26%20GitHub-181717?style=flat&logo=github&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
+[![Portfolio](https://img.shields.io/badge/duarte--santos.ch-111?style=flat&logo=googlechrome&logoColor=white)](https://duarte-santos.ch)
+[![openGym Discord](https://img.shields.io/badge/openGym%20Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/e62jY6fwVb)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/duartesantos)
 
 ---
 
-## 🚀 Projects
+## 🏋️ openGym
 
-**[litho.ch](https://litho.ch)** — Portfolio website for a private client. Full implementation, hosting, admin & legal setup, plus ongoing improvement suggestions.
+[![Stars](https://img.shields.io/github/stars/DuarteSantos8/openGym?style=flat&logo=github&label=stars)](https://github.com/DuarteSantos8/openGym/stargazers)
+[![Release](https://img.shields.io/github/v/release/DuarteSantos8/openGym?style=flat&label=release)](https://github.com/DuarteSantos8/openGym/releases/latest)
+[![App Store](https://img.shields.io/badge/App%20Store-iPhone%20%2B%20Watch-0D96F6?style=flat&logo=apple&logoColor=white)](https://apps.apple.com/app/id6822275400)
 
-**[duarte-santos.ch](https://duarte-santos.ch)** — My own portfolio and freelance web development practice for Swiss SMEs. Design, build and deployment end to end.
+Started as a replacement for my own training spreadsheet. Now it's a gym and bodyweight tracker with:
 
-**[openGym](https://github.com/DuarteSantos8/openGym)** — Workout tracking app for planning splits and logging progressive overload. Built to replace my own spreadsheet.
+- an **iPhone + Apple Watch app** in the App Store and an **Android APK**
+- a **self-hostable** web app (Docker, passkey login, sync between devices)
+- a catalogue of thousands of animated exercises and a muscle map of what you trained
+- imports from Strong, Hevy, FitNotes and Apple Health, plus an MCP server and an optional AI coach
+
+I run it as a real project: releases every couple of weeks, 79 contributors, a CLA, a Discord community and a lot of issue triage.
+→ **[opengym.ch](https://opengym.ch)**
+
+## 🧰 Other things I've built
+
+| | |
+|---|---|
+| **[AgentDeck](https://github.com/DuarteSantos8/agentdeck)** | Browser terminal deck for long-running Claude Code and shell agents. Every session is a tmux session, so it survives closed tabs, dropped VPNs and restarts. |
+| **[attitude](https://duartesantos8.github.io/attitude/)** | Spatial orientation test for pilot candidates: read the aircraft's attitude, steer with WASD. |
+| **Homelab** | Proxmox box running ~20 apps behind Cloudflare Tunnel: my portfolio, openGym, learning apps for school, monitoring, backups and a smart-plug watchdog that power-cycles the server when it hangs. |
+| **Client work** | Websites for Swiss small businesses, e.g. [litho.ch](https://litho.ch): design, build, hosting and the legal bits. |
+
+## 🛠️ What I mostly work with
+
+**React · Vite · Node.js · Capacitor (iOS/Android) · Docker · Linux · Nginx · Cloudflare**
+At school and work also Java/Spring Boot, Python, Vue and SQL.
 
 ---
 
-## 📍 About Me
-
-🇨🇭 Rorbas, Switzerland · 🎓 Applikationsentwickler EFZ + BM @ Sunrise UPC
-
-*Always building. Always learning.*
+<sub>📍 Zurich area, Switzerland · 🎓 Applikationsentwickler EFZ + BM</sub>
