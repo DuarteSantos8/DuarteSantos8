@@ -27,13 +27,13 @@
 <!-- prompt -->
 <g class="mono" font-size="20">
   <text x="52" y="110" fill="#32d74b">$</text>
-  <text x="74" y="110" fill="#f5f5f7" class="type">whoami --verbose</text>
+  <text x="74" y="110" fill="#f5f5f7" class="type">cat about.txt</text>
 </g>
 
 <text x="50" y="170" class="sans rise d1" font-size="52" font-weight="800" fill="#f5f5f7" letter-spacing="-1">Duarte Santos</text>
-<text x="52" y="210" class="sans rise d2" font-size="21" fill="#8b9099">maintainer of <tspan fill="#32d74b" font-weight="700">openGym</tspan> · apprentice dev @ Sunrise · self-hosts everything</text>
+<text x="52" y="210" class="sans rise d2" font-size="21" fill="#8b9099">I build the apps I wish existed. mostly <tspan fill="#32d74b" font-weight="700">openGym</tspan>.</text>
 <g class="mono rise d3" font-size="15" fill="#8b9099">
-  <text x="52" y="248"><tspan fill="#32d74b">›</tspan> 🇨🇭 Zurich  <tspan fill="#32d74b">›</tspan> React · Node · Capacitor · Docker  <tspan fill="#32d74b">›</tspan> ships every 2 weeks</text>
+  <text x="52" y="248"><tspan fill="#32d74b">›</tspan> apprentice dev @ Sunrise  <tspan fill="#32d74b">›</tspan> near Zurich  <tspan fill="#32d74b">›</tspan> runs everything on one server at home</text>
 </g>
 <g class="mono rise d4" font-size="20">
   <text x="52" y="248" dy="36" fill="#32d74b">$ <tspan class="caret">▍</tspan></text>
