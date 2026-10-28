@@ -1,6 +1,6 @@
 # Hi, I'm Duarte 👋
 
-Application developer apprentice at **Sunrise** in Switzerland, and the maintainer of **[openGym](https://github.com/DuarteSantos8/openGym)**, an open-source workout tracker with 15k+ stars that runs on your phone, your wrist and your own server.
+Application developer apprentice at **Sunrise** in Switzerland, and the maintainer of **[openGym](https://github.com/DuarteSantos8/openGym)**, an open-source workout tracker with 16k+ stars that runs on your phone, your wrist and your own server.
 
 I like shipping things people actually use, and I host almost everything I build myself.
 
@@ -18,12 +18,12 @@ I like shipping things people actually use, and I host almost everything I build
 
 Started as a replacement for my own training spreadsheet. Now it's a gym and bodyweight tracker with:
 
-- an **iPhone + Apple Watch app** in the App Store and an **Android APK**
+- an **iPhone + Apple Watch app** in the App Store (every country) and an **Android APK** with 60k+ downloads
 - a **self-hostable** web app (Docker, passkey login, sync between devices)
 - a catalogue of thousands of animated exercises and a muscle map of what you trained
 - imports from Strong, Hevy, FitNotes and Apple Health, plus an MCP server and an optional AI coach
 
-I run it as a real project: releases every couple of weeks, 79 contributors, a CLA, a Discord community and a lot of issue triage.
+I run it as a real project: releases every couple of weeks, 120 contributors, a CLA, a Discord community of 1.9k people and a lot of issue triage.
 → **[opengym.ch](https://opengym.ch)**
 
 ## 🧰 Other things I've built
