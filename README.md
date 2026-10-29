@@ -1,45 +1,57 @@
-# Hi, I'm Duarte 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
+  <img alt="Terminal: whoami prints Duarte Santos, app dev apprentice at Sunrise, Switzerland" src="assets/terminal-light.svg" width="100%">
+</picture>
 
-Application developer apprentice at **Sunrise** in Switzerland, and the maintainer of **[openGym](https://github.com/DuarteSantos8/openGym)**, an open-source workout tracker with 16k+ stars that runs on your phone, your wrist and your own server.
+hey, I'm Duarte. I'm doing my apprenticeship as an application developer at **Sunrise** in Switzerland, and I maintain **[openGym](https://github.com/DuarteSantos8/openGym)**, an open-source workout tracker with 16k+ stars that runs on your phone, your wrist and your own server.
 
-I like shipping things people actually use, and I host almost everything I build myself.
+I like shipping things people actually use, and I host almost everything I build myself. Mostly on one small server at home, which sometimes needs to be turned off and on again. There is a smart plug for that.
 
-[![Portfolio](https://img.shields.io/badge/duarte--santos.ch-111?style=flat&logo=googlechrome&logoColor=white)](https://duarte-santos.ch)
-[![openGym Discord](https://img.shields.io/badge/openGym%20Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/e62jY6fwVb)
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/duartesantos)
+**[duarte-santos.ch](https://duarte-santos.ch)** &nbsp;·&nbsp; **[openGym Discord](https://discord.gg/e62jY6fwVb)** &nbsp;·&nbsp; **[Buy me a coffee](https://buymeacoffee.com/duartesantos)**
 
----
+<br>
 
-## 🏋️ openGym
+<a href="https://github.com/DuarteSantos8/openGym">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/opengym-dark.svg">
+    <img alt="openGym in numbers: stars, contributors, APK downloads, Discord members, latest release, App Store" src="assets/opengym-light.svg" width="100%">
+  </picture>
+</a>
 
-[![Stars](https://img.shields.io/github/stars/DuarteSantos8/openGym?style=flat&logo=github&label=stars)](https://github.com/DuarteSantos8/openGym/stargazers)
-[![Release](https://img.shields.io/github/v/release/DuarteSantos8/openGym?style=flat&label=release)](https://github.com/DuarteSantos8/openGym/releases/latest)
-[![App Store](https://img.shields.io/badge/App%20Store-iPhone%20%2B%20Watch-0D96F6?style=flat&logo=apple&logoColor=white)](https://apps.apple.com/app/id6822275400)
+Every gym tracker I tried wanted a subscription, an account or my training data on someone else's server, usually all three. So I wrote a small page for exactly one user (me). Now it's an **iPhone + Apple Watch app** in the App Store (every country), an **Android APK**, a **self-hostable** web app with passkey login and sync, thousands of animated exercises with a muscle map, imports from Strong, Hevy, FitNotes and Apple Health, an MCP server and an optional AI coach. I run it like a real project: releases every couple of weeks, a CLA, a Discord full of people telling me what's broken, and I'm still the first user of every release. **[opengym.ch](https://opengym.ch)**
 
-Started as a replacement for my own training spreadsheet. Now it's a gym and bodyweight tracker with:
+<br>
 
-- an **iPhone + Apple Watch app** in the App Store (every country) and an **Android APK** with 60k+ downloads
-- a **self-hostable** web app (Docker, passkey login, sync between devices)
-- a catalogue of thousands of animated exercises and a muscle map of what you trained
-- imports from Strong, Hevy, FitNotes and Apple Health, plus an MCP server and an optional AI coach
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/rack-dark.svg">
+  <img alt="Homelab rack with a status light for each public app, fed by Uptime Kuma" src="assets/rack-light.svg" width="100%">
+</picture>
 
-I run it as a real project: releases every couple of weeks, 120 contributors, a CLA, a Discord community of 1.9k people and a lot of issue triage.
-→ **[opengym.ch](https://opengym.ch)**
+### Other things I've built
 
-## 🧰 Other things I've built
+<p>
+  <a href="https://github.com/DuarteSantos8/agentdeck"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-agentdeck-dark.svg"><img alt="AgentDeck: browser terminal deck for long-running Claude Code and shell agents" src="assets/tile-agentdeck-light.svg" width="49%"></picture></a>
+  <a href="https://duartesantos8.github.io/attitude/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-attitude-dark.svg"><img alt="attitude: spatial orientation test for pilot candidates" src="assets/tile-attitude-light.svg" width="49%"></picture></a>
+</p>
+<p>
+  <a href="https://duarte-santos.ch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-homelab-dark.svg"><img alt="Homelab: Proxmox box behind Cloudflare Tunnel running about 20 apps" src="assets/tile-homelab-light.svg" width="49%"></picture></a>
+  <a href="https://litho.ch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-clients-dark.svg"><img alt="Client work: websites for Swiss small businesses, for example litho.ch" src="assets/tile-clients-light.svg" width="49%"></picture></a>
+</p>
 
-| | |
-|---|---|
-| **[AgentDeck](https://github.com/DuarteSantos8/agentdeck)** | Browser terminal deck for long-running Claude Code and shell agents. Every session is a tmux session, so it survives closed tabs, dropped VPNs and restarts. |
-| **[attitude](https://duartesantos8.github.io/attitude/)** | Spatial orientation test for pilot candidates: read the aircraft's attitude, steer with WASD. |
-| **Homelab** | Proxmox box running ~20 apps behind Cloudflare Tunnel: my portfolio, openGym, learning apps for school, monitoring, backups and a smart-plug watchdog that power-cycles the server when it hangs. |
-| **Client work** | Websites for Swiss small businesses, e.g. [litho.ch](https://litho.ch): design, build, hosting and the legal bits. |
+### What I mostly work with
 
-## 🛠️ What I mostly work with
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img alt="Tech stack: React, Vite, Node.js, Capacitor, Docker, Linux, Nginx, Cloudflare. At school and work also Java/Spring Boot, Python, Vue and SQL." src="assets/stack-light.svg" width="100%">
+</picture>
 
-**React · Vite · Node.js · Capacitor (iOS/Android) · Docker · Linux · Nginx · Cloudflare**
-At school and work also Java/Spring Boot, Python, Vue and SQL.
+### My week, itemised
 
----
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/receipt-dark.svg">
+    <img alt="This week on GitHub as a gym receipt" src="assets/receipt-light.svg" width="460">
+  </picture>
+</p>
 
-<sub>📍 Zurich area, Switzerland · 🎓 Applikationsentwickler EFZ + BM</sub>
+<p align="center"><sub>Zurich area, Switzerland &nbsp;·&nbsp; Applikationsentwickler EFZ + BM &nbsp;·&nbsp; every graphic here is a hand-rolled SVG, refreshed daily by <a href="scripts/generate.mjs">one Node script</a></sub></p>

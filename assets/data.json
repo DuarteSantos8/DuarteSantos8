@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-10-28T14:58:20.127Z",
+  "gym": {
+    "forks": 2198,
+    "stars": 16912,
+    "contributors": 120,
+    "apk": 66801,
+    "release": "v1.4.3"
+  },
+  "discord": {
+    "members": 1943,
+    "online": 241
+  },
+  "week": {
+    "from": "2026-10-21",
+    "to": "2026-10-28",
+    "commits": 328,
+    "prsShipped": 15,
+    "prsMergedForOthers": 19,
+    "prsReviewed": 0,
+    "issuesClosed": 78,
+    "threadsCommented": 143
+  },
+  "kuma": {
+    "apps": [
+      {
+        "label": "portfolio",
+        "status": "up"
+      },
+      {
+        "label": "gym app",
+        "status": "up"
+      },
+      {
+        "label": "gym api",
+        "status": "up"
+      },
+      {
+        "label": "opengym.ch",
+        "status": "up"
+      },
+      {
+        "label": "gym staging",
+        "status": "up"
+      },
+      {
+        "label": "mathe game",
+        "status": "up"
+      }
+    ],
+    "infra": {
+      "vm": "up",
+      "pi": "up",
+      "pve": "up"
+    },
+    "total": 25,
+    "green": 25,
+    "uptime24": 0.9998048494351306
+  },
+  "host": {
+    "uptimeSecs": 295177,
+    "ramGb": 32,
+    "load": 4.35
+  }
+}
