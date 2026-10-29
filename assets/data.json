@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-28T14:58:20.127Z",
+  "generatedAt": "2026-10-29T10:49:35.549Z",
   "gym": {
-    "forks": 2198,
-    "stars": 16912,
+    "forks": 2242,
+    "stars": 17198,
     "contributors": 120,
-    "apk": 66801,
+    "apk": 71245,
     "release": "v1.4.3"
   },
   "discord": {
-    "members": 1943,
-    "online": 241
+    "members": 1952,
+    "online": 204
   },
   "week": {
-    "from": "2026-10-21",
-    "to": "2026-10-28",
-    "commits": 328,
+    "from": "2026-10-22",
+    "to": "2026-10-29",
+    "commits": 434,
     "prsShipped": 15,
     "prsMergedForOthers": 19,
     "prsReviewed": 0,
-    "issuesClosed": 78,
-    "threadsCommented": 143
+    "issuesClosed": 77,
+    "threadsCommented": 147
   },
   "kuma": {
     "apps": [
@@ -44,7 +44,7 @@
         "status": "up"
       },
       {
-        "label": "mathe game",
+        "label": "dashboard",
         "status": "up"
       }
     ],
@@ -55,11 +55,11 @@
     },
     "total": 25,
     "green": 25,
-    "uptime24": 0.9998048494351306
+    "uptime24": 1
   },
   "host": {
-    "uptimeSecs": 295177,
+    "uptimeSecs": 366653,
     "ramGb": 32,
-    "load": 4.35
+    "load": 7.65
   }
 }

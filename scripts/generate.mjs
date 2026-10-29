@@ -43,7 +43,8 @@ const PUBLIC_APPS = [
   { label: 'gym api', host: 'gym.duarte-santos.ch', name: /api/i },
   { label: 'opengym.ch', host: 'opengym.ch' },
   { label: 'gym staging', host: 'gym-test.duarte-santos.ch', name: /staging/i },
-  { label: 'mathe game', host: 'mathe.duarte-santos.ch' },
+  // VPN-only, so matched by its Kuma name and shown with a generic label, never its hostname.
+  { label: 'dashboard', name: /dashboard|^hq\b/i },
 ];
 // Infrastructure units: shown with a generic label only, never a name/IP from Kuma.
 const INFRA = { vm: /^docker vm$/i, pi: /^pi infra$/i, pve: /^proxmox ui$/i };
@@ -140,7 +141,7 @@ async function fetchKuma() {
   if (!list.length) throw new Error('kuma returned no monitors');
 
   const apps = PUBLIC_APPS.map((a) => {
-    const m = list.find((x) => x.host === a.host && (!a.name || a.name.test(x.name)));
+    const m = list.find((x) => (!a.host || x.host === a.host) && (!a.name || a.name.test(x.name)));
     return { label: a.label, status: m ? m.status : 'unknown' };
   });
   const infra = {};
@@ -246,10 +247,9 @@ function terminal(data, th) {
   if (k.total) upBits.push(`${k.green}/${k.total} checks green`);
   if (k.uptime24 != null) upBits.push(`${(k.uptime24 * 100).toFixed(1)}% last 24h`);
   if (h.ramGb) upBits.push(`${h.ramGb} GB RAM`);
-  upBits.push('1 smart plug on standby');
   const script = [
-    { cmd: 'whoami', out: [[['Duarte Santos', th.text, 700], [', app dev apprentice @ Sunrise, Switzerland', th.text]]] },
-    { cmd: 'ls projects/', out: [[['openGym/', th.accentText, 700], ['  AgentDeck/', th.blue, 700], ['  attitude/', th.blue, 700], ['  homelab/', th.blue, 700], ['  client-work/', th.blue, 700]]] },
+    { cmd: 'whoami', out: [[['Duarte Santos', th.text, 700], [', app dev apprentice @ Sunrise · maintainer of ', th.text], ['openGym', th.accentText, 700]]] },
+    { cmd: 'ls projects/', out: [[['openGym/', th.accentText, 700], ['  AgentDeck/', th.blue, 700], ['  homelab/', th.blue, 700], ['  client-work/', th.blue, 700]]] },
     { cmd: 'uptime', out: [[[' ' + upBits.join(', '), th.muted]]] },
     { cmd: 'cat motto.txt', out: [[['Ship it, host it myself, fix it on the train to school.', th.orange]]] },
     { cmd: null },
@@ -363,7 +363,7 @@ function gymCard(data, mode) {
 function rack(data, th) {
   const k = data.kuma || {}, h = data.host || {};
   const W = 1000, RX = 60, RW = W - 2 * RX, U = 42, top = 84;
-  const units = [2, 1, 2, 1, 1];
+  const units = [2, 1, 2, 1];
   const H = top + units.reduce((a, b) => a + b, 0) * U + 22 + 56;
   const ledColor = (st) => st === 'up' || st === 'maintenance' ? th.green : st === 'down' ? th.red : th.orange;
   const css = fonts(['m400', 'm700', 'i700']) + `.m{font-family:${MONO}}.i{font-family:${INTER}}`;
@@ -411,7 +411,7 @@ function rack(data, th) {
   y += U;
   // U4-5: public apps patch panel
   s += panel(2);
-  s += label(RX + 18, y + 22, 'PUBLIC APPS', 11, 700, th.muted);
+  s += label(RX + 18, y + 22, 'APPS', 11, 700, th.muted);
   const apps = k.apps || PUBLIC_APPS.map((a) => ({ label: a.label, status: 'unknown' }));
   const pw = (RW - 36) / apps.length;
   apps.forEach((a, i) => {
@@ -427,18 +427,12 @@ function rack(data, th) {
   s += label(RX + 42, y + U / 2 + 4, 'RASPBERRY PI');
   s += label(RX + 170, y + U / 2 + 4, 'uptime kuma  ·  pi-hole  ·  vpn  ·  keeps an eye on the big box', 11.5, 400, th.muted);
   y += U;
-  // U7: smart plug
-  s += panel(1);
-  s += `<circle cx="${RX + 24}" cy="${y + U / 2}" r="4.5" fill="${th.orange}"/>`;
-  s += label(RX + 42, y + U / 2 + 4, 'SMART PLUG');
-  s += label(RX + 170, y + U / 2 + 4, 'if the server stops answering, it gets turned off and on again', 11.5, 400, th.muted);
-  y += U;
   // legend
   const ly = H - 26;
   s += `<circle cx="${RX + 4}" cy="${ly - 4}" r="4.5" fill="${th.green}"/>${label(RX + 16, ly, 'up', 11.5, 400, th.muted)}`;
   s += `<circle cx="${RX + 64}" cy="${ly - 4}" r="4.5" fill="${th.red}"/>${label(RX + 76, ly, 'down', 11.5, 400, th.muted)}`;
   s += `<circle cx="${RX + 136}" cy="${ly - 4}" r="4.5" fill="${th.orange}"/>${label(RX + 148, ly, 'no data', 11.5, 400, th.muted)}`;
-  s += `<text class="m" x="${RX + RW}" y="${ly}" text-anchor="end" font-size="11.5" fill="${th.muted}">only public apps shown, the rest lives behind the VPN</text>`;
+  s += `<text class="m" x="${RX + RW}" y="${ly}" text-anchor="end" font-size="11.5" fill="${th.muted}">a few of ~20 apps shown, the rest stays private</text>`;
   return s + '</svg>';
 }
 
@@ -491,7 +485,7 @@ const TILES = [
   },
   {
     id: 'homelab', title: 'Homelab', sub: 'one box, ~20 apps, zero open ports',
-    desc: 'Proxmox box behind Cloudflare Tunnel: portfolio, openGym, school apps, monitoring, backups and a smart plug that reboots it when it hangs.',
+    desc: 'Proxmox box behind Cloudflare Tunnel: portfolio, openGym, school apps, monitoring and nightly backups.',
     chips: ['proxmox', 'docker', 'traefik'],
     art: (th, X, Y) => {
       const p = `M${X + 40} ${Y + 40} C ${X + 90} ${Y + 40}, ${X + 80} ${Y + 104}, ${X + 140} ${Y + 104}`;
@@ -503,9 +497,7 @@ const TILES = [
         <rect x="${X + 140}" y="${Y + 76}" width="74" height="56" rx="7" fill="${th.surface2}" stroke="${th.border}" stroke-width="2"/>
         <text class="m" x="${X + 177}" y="${Y + 98}" text-anchor="middle" font-size="10" font-weight="700" fill="${th.text}">pve</text>
         ${[0, 1, 2, 3, 4].map((i) => `<circle cx="${X + 152 + i * 12.5}" cy="${Y + 116}" r="3.2" fill="${th.green}"><animate attributeName="opacity" values="1;0.4;1" dur="${(1.6 + i * 0.37).toFixed(2)}s" repeatCount="indefinite"/></circle>`).join('')}
-        <path d="M${X + 177} ${Y + 76} V ${Y + 30}" stroke="${th.faint}" stroke-width="2"/>
-        <rect x="${X + 160}" y="${Y + 12}" width="34" height="20" rx="4" fill="${th.orange}" opacity="0.9"/>
-        <text class="m" x="${X + 177}" y="${Y + 26}" text-anchor="middle" font-size="9" font-weight="700" fill="${th.page}">plug</text>`;
+`;
     },
   },
   {

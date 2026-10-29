@@ -5,7 +5,7 @@
 
 hey, I'm Duarte. I'm doing my apprenticeship as an application developer at **Sunrise** in Switzerland, and I maintain **[openGym](https://github.com/DuarteSantos8/openGym)**, an open-source workout tracker with 16k+ stars that runs on your phone, your wrist and your own server.
 
-I like shipping things people actually use, and I host almost everything I build myself. Mostly on one small server at home, which sometimes needs to be turned off and on again. There is a smart plug for that.
+I like shipping things people actually use, and I host almost everything I build myself. Mostly on one small server at home.
 
 **[duarte-santos.ch](https://duarte-santos.ch)** &nbsp;·&nbsp; **[openGym Discord](https://discord.gg/e62jY6fwVb)** &nbsp;·&nbsp; **[Buy me a coffee](https://buymeacoffee.com/duartesantos)**
 
